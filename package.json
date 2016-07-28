@@ -1,7 +1,7 @@
 {
-  "name": "tsproj",
+  "name": "reactboiler",
   "version": "1.0.0",
-  "description": "",
+  "description": "learning environment for react with typescript",
   "main": "./dist/bundle.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,10 +10,13 @@
   "license": "ISC",
   "dependencies": {
     "react": "^15.2.1",
+    "react-bootstrap": "^0.30.0",
     "react-dom": "^15.2.1"
   },
   "devDependencies": {
+    "css-loader": "^0.23.1",
     "source-map-loader": "^0.1.5",
+    "style-loader": "^0.13.1",
     "ts-loader": "^0.8.2",
     "webpack-livereload-plugin": "^0.8.1"
   }
