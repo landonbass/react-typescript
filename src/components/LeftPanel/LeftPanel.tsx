@@ -2,18 +2,19 @@ const styles = require("./LeftPanel.css");
 
 import * as React from "react";
 
-export interface LeftPanelProps {items: Array<string>}
+export interface LeftNavItem {text: string; href: string;}
+export interface LeftPanelProps {items: Array<LeftNavItem>}
 
 export class LeftPanel extends React.Component<LeftPanelProps, {}> {
     render() {
-        var els : any[] = [];
+        var leftNavItems : any[] = [];
         this.props.items.forEach((item, i) => {
-            els.push(<li key={i}><a href="#">{item}</a></li>);
+            leftNavItems.push(<li key={i}><a href={item.href}>{item.text}</a></li>);
         })
         return (
              <div id={styles.sidebarWrapper}>
                 <ul className={styles.sidebarNav}>
-                    { els }
+                    { leftNavItems }
                 </ul>
             </div>
         );

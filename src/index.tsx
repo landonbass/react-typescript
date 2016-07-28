@@ -3,9 +3,9 @@ const styles = require("./app.css");
 import * as React    from "react";
 import * as ReactDOM from "react-dom";
 
-import { LeftPanel }  from "./components/LeftPanel/LeftPanel";
+import { LeftPanel, LeftNavItem }  from "./components/LeftPanel/LeftPanel";
 
-let links = ["link 1", "link 2"];
+let links : Array<LeftNavItem> = [{text:"home", href: "#"}, {text:"settings", href: "#"}, {text:"my queries", href: "#"}, {text:"export", href: "#"}];
 
 ReactDOM.render(
     <div>
