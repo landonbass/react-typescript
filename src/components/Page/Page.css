@@ -1,0 +1,14 @@
+
+#pageContentWrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+@media(min-width:768px) {
+    #pageContentWrapper {
+        padding: 20px;
+        padding-left: 250px;
+        position: relative;
+    }
+}
