@@ -1,3 +1,10 @@
+/* 
+
+styles in this file should be application level styles
+component styles should be placed in component level stylesheets
+
+*/
+
 body {
     background-color: lightblue;
 }

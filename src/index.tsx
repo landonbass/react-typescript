@@ -1,4 +1,4 @@
-const styles = require("./app.css");
+const styles = require("./app.css"); //required to inject primary stylesheet
 
 import * as React    from "react";
 import * as ReactDOM from "react-dom";
