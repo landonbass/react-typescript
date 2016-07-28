@@ -11,8 +11,8 @@ export class LeftPanel extends React.Component<LeftPanelProps, {}> {
             els.push(<li key={i}><a href="#">{item}</a></li>);
         })
         return (
-             <div id="styles.sidebar-wrapper">
-                <ul className="styles.sidebar-nav">
+             <div id={styles.sidebarWrapper}>
+                <ul className={styles.sidebarNav}>
                     { els }
                 </ul>
             </div>

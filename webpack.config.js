@@ -1,4 +1,4 @@
-
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
     entry: "./src/index.tsx",
@@ -18,7 +18,7 @@ module.exports = {
         loaders: [
             // All files with a '.ts' or '.tsx' extension will be handled by 'ts-loader'.
             { test: /\.tsx?$/, loader: "ts-loader" },
-            { test: /\.css$/,  loaders: ["style", "css"]}//loader: 'style!css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]' }
+            { test: /\.css$/,  loader: ExtractTextPlugin.extract('css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]')}
         ],
 
         preLoaders: [
@@ -34,5 +34,8 @@ module.exports = {
     externals: {
         "react": "React",
         "react-dom": "ReactDOM"
-    }
+    },
+    plugins: [
+        new ExtractTextPlugin("dist/styles.css")
+    ]
 };
