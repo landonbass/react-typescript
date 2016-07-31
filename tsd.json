@@ -7,6 +7,21 @@
   "installed": {
     "requirejs/require.d.ts": {
       "commit": "5979f9f7472d3ab58abd10059aea91531708b75c"
+    },
+    "react-router/react-router.d.ts": {
+      "commit": "2a24bbb7ca4f13e52c7f6a0ab6144b565bf1ef55"
+    },
+    "react-router/history.d.ts": {
+      "commit": "2a24bbb7ca4f13e52c7f6a0ab6144b565bf1ef55"
+    },
+    "history/history.d.ts": {
+      "commit": "2a24bbb7ca4f13e52c7f6a0ab6144b565bf1ef55"
+    },
+    "react/react.d.ts": {
+      "commit": "2a24bbb7ca4f13e52c7f6a0ab6144b565bf1ef55"
+    },
+    "react/react-dom.d.ts": {
+      "commit": "2a24bbb7ca4f13e52c7f6a0ab6144b565bf1ef55"
     }
   }
 }

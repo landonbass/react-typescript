@@ -1,8 +1,14 @@
+"use strict";
+
 const styles = require("./app.css"); //required to inject primary stylesheet
 
 import * as React    from "react";
 import * as ReactDOM from "react-dom";
+import {Router, Route, browserHistory, IndexRoute } from "react-router"
 
+import App                          from "./components/App/App";
+import Home                         from "./components/Home/Home"; 
+import About                        from "./components/About/About";
 import { LeftPanel, LeftNavItem }   from "./components/LeftPanel/LeftPanel";
 import { Page }                     from "./components/Page/Page";
 import { InfoWidget }               from "./components/Widgets/InfoWidget/InfoWidget";
@@ -11,8 +17,12 @@ let links : Array<LeftNavItem> = [{text:"home", href: "#"}, {text:"settings", hr
 
 ReactDOM.render(
     <div id="wrapper">
-        <LeftPanel items={links} />
-        <Page />
+        <Router history={browserHistory}>
+            <Route path ="/" component={App}>
+                <IndexRoute component={Home}/>
+                <Route path ="/about" component={About}/>          
+            </Route>
+        </Router>
     </div>,
     document.getElementById("container")
 )
