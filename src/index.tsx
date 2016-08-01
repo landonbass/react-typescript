@@ -8,7 +8,7 @@ import {Router, Route, browserHistory, IndexRoute } from "react-router"
 
 import App                          from "./components/App/App";
 import Home                         from "./components/Home/Home"; 
-import About                        from "./components/About/About";
+import Settings                     from "./components/Settings/Settings";
 
 //let links : Array<LeftNavItem> = [{text:"home", href: "#"}, {text:"settings", href: "#"}, {text:"my queries", href: "#"}, {text:"export", href: "#"}];
 
@@ -17,7 +17,7 @@ ReactDOM.render(
         <Router history={browserHistory}>
             <Route path ="/" component={App}>
                 <IndexRoute component={Home}/>
-                <Route path ="/about" component={About}/>          
+                <Route path ="/index" component={Settings}/>          
             </Route>
         </Router>
     </div>,
