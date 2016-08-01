@@ -1,7 +1,8 @@
-import * as React from 'react'
-import { NavLink } from '../NavLink/NavLink'
+import * as React                   from 'react'
+import { NavLink }                  from '../NavLink/NavLink'
+import { LeftPanel, LeftNavItem }   from "../LeftPanel/LeftPanel";
 
-export default React.createClass({
+export default class extends React.Component<{}, {}>{
   render() {
     return (
       <div>
@@ -17,4 +18,4 @@ export default React.createClass({
       </div>
     )
   }
-})
+}

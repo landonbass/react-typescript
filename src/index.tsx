@@ -9,11 +9,8 @@ import {Router, Route, browserHistory, IndexRoute } from "react-router"
 import App                          from "./components/App/App";
 import Home                         from "./components/Home/Home"; 
 import About                        from "./components/About/About";
-import { LeftPanel, LeftNavItem }   from "./components/LeftPanel/LeftPanel";
-import { Page }                     from "./components/Page/Page";
-import { InfoWidget }               from "./components/Widgets/InfoWidget/InfoWidget";
 
-let links : Array<LeftNavItem> = [{text:"home", href: "#"}, {text:"settings", href: "#"}, {text:"my queries", href: "#"}, {text:"export", href: "#"}];
+//let links : Array<LeftNavItem> = [{text:"home", href: "#"}, {text:"settings", href: "#"}, {text:"my queries", href: "#"}, {text:"export", href: "#"}];
 
 ReactDOM.render(
     <div id="wrapper">
