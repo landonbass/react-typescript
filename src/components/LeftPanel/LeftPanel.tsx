@@ -1,5 +1,3 @@
-"use strict";
-
 const styles = require("./LeftPanel.css");
 
 import * as React from "react";

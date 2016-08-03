@@ -1,5 +1,3 @@
-"use strict";
-
 const styles = require("./Page.css");
 
 import * as React from "react";

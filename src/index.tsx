@@ -1,5 +1,3 @@
-"use strict";
-
 const styles = require("./app.css"); //required to inject primary stylesheet
 
 import * as React    from "react";
@@ -17,7 +15,7 @@ ReactDOM.render(
         <Router history={browserHistory}>
             <Route path ="/" component={App}>
                 <IndexRoute component={Home}/>
-                <Route path ="/index" component={Settings}/>          
+                <Route path ="/settings" component={Settings}/>          
             </Route>
         </Router>
     </div>,
