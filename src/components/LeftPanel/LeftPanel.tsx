@@ -10,7 +10,7 @@ export class LeftPanel extends React.Component<LeftPanelProps, {}> {
     render() {
         var leftNavItems : any[] = [];
         this.props.items.forEach((item, i) => {
-            leftNavItems.push(<li><NavLink key={i} to={item.href} onlyActiveOnIndex={item.onlyActiveOnIndex || false}>{item.text}</NavLink></li>);
+            leftNavItems.push(<li key={i}><NavLink to={item.href} onlyActiveOnIndex={item.onlyActiveOnIndex || false}>{item.text}</NavLink></li>);
         })
         return (
              <div id={styles.sidebarWrapper}>
