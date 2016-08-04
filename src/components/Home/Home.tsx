@@ -1,7 +1,8 @@
 import * as React from 'react'
+import {Page} from "../Page/Page"
 
 export default class extends React.Component<{}, {}>{
   render() {
-    return <div>Home</div>
+    return <Page/>
   }
 }
