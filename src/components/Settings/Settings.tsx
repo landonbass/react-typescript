@@ -3,6 +3,10 @@ import { Page } from '../Page/Page'
 
 export default class extends React.Component<{}, {}>{
   render() {
-    return <Page/>
+    return (
+      <Page>
+        <h2>settings</h2>
+      </Page>
+    )
   }
 }
