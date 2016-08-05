@@ -1,7 +1,7 @@
 const styles = require("./app.css"); //required to inject primary stylesheet
 
-import * as React    from "react";
-import * as ReactDOM from "react-dom";
+import * as React                                   from "react";
+import * as ReactDOM                                from "react-dom";
 import {Router, Route, browserHistory, IndexRoute } from "react-router"
 
 import App                          from "./components/App/App";

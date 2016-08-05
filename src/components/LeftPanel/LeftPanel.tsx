@@ -1,7 +1,7 @@
 const styles = require("./LeftPanel.css");
 
-import * as React from "react";
-import { NavLink } from '../NavLink/NavLink'
+import * as React   from "react";
+import { NavLink }  from '../NavLink/NavLink'
 
 export interface LeftNavItem {text: string; href: string; onlyActiveOnIndex?:boolean}
 export interface LeftPanelProps {items: Array<LeftNavItem>}
